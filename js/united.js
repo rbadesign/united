@@ -1825,9 +1825,9 @@
 		}
 		debugWrite("Переадресация на мобильную версию","end");
 		
-		if(!isCordova() && !isKioskPro()) {
-			$('head').append('<meta name="viewport" content="width=1280" />');
-		}
+//		if(!isCordova() && !isKioskPro()) {
+//			$('head').append('<meta name="viewport" content="width=1280" />');
+//		}
 		
 	
 			// Используем фрагмент из скрипта CUSTOM FORM ELEMENTS
