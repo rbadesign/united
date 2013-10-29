@@ -306,7 +306,7 @@
 			prev: { buttonClass:"button-small", text:"" },
 			next: { buttonClass:"button-small", text:"" },
 			home: { buttonClass:"button", text:"首頁" },
-			contact: { buttonClass:"button", text:"有疑问吗？ " },
+			contact: { buttonClass:"button", text:"有疑问吗？" },
 			save: { buttonClass:"button", text:"提交" },
 			skip: { buttonClass:"button-mini", text:"跳跃" },
 			remark: { buttonClass:"", text:"Cryo-Cell的脐血教育人员有可能会和您联络，以解答您对脐血的相关疑问。" },
@@ -334,7 +334,7 @@
 		en: {
 			page0: { 
 				title: "Learn about cord blood banking!",
-				subtitle: "##doctor## inviting you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
 			},
 			page1: { 
 				title: "Why should you store<br />your baby’s cord blood?",
@@ -360,7 +360,7 @@
 		es: {
 			page0: { 
 				title: "!Sangre del Cordón Umbilical!",
-				subtitle: "##doctor## inviting you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
 			},
 			page1: { 
 				title: "¿Por qué debe almacenar la sangre del cordón umbilical de su bebé?",
@@ -386,7 +386,7 @@
 		ru: {
 			page0: { 
 				title: "Узнайте о хранении крови!",
-				subtitle: "##doctor## приглашает Вас посмотреть видео о сохранении пуповинной крови<br />Вашего ребёнка. Это видео создано совместно с Parent's Guide to Cord Blood Foundation<br />с целью информирования будущих родителей о возможностях по сохранению здоровья.<br />Пожалуйста, заполните форму ниже, чтобы продолжить :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> приглашает Вас посмотреть видео о сохранении пуповинной крови<br />Вашего ребёнка. Это видео создано совместно с Parent's Guide to Cord Blood Foundation<br />с целью информирования будущих родителей о возможностях по сохранению здоровья.<br />Пожалуйста, заполните форму ниже, чтобы продолжить :"
 			},
 			page1: { 
 				title: "Почему Вы должны сохранить пуповинную кровь Вашего ребенка?",
@@ -412,7 +412,7 @@
 		it: {
 			page0: { 
 				title: "Learn about cord blood banking!",
-				subtitle: "##doctor## inviting you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
 			},
 			page1: { 
 				title: "Why should you store<br />your baby’s cord blood?",
@@ -438,14 +438,14 @@
 		cn: {
 			page0: { 
 				title: "了解有关脐带血的储存！",
-				subtitle: "##doctor## inviting you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
 			},
 			page1: { 
 				title: "为什么您应该储存宝宝的脐带血？",
 				subtitle: "请观赏一个有关脐带血干细胞的动画短视频。"
 			},
 			page2: {
-				title: "脐带血如何能挽救生命",
+				title: "脐带血如何能挽救生命？",
 				subtitle: "请观赏一个3分钟的视频：一个家庭的故事。"
 			},
 			page3: { 
@@ -464,7 +464,7 @@
 		tw: {
 			page0: { 
 				title: "了解有關臍帶血的儲存！",
-				subtitle: "##doctor## inviting you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
 			},
 			page1: { 
 				title: "為什麼您應該儲存寶寶的臍帶血？",
@@ -499,7 +499,7 @@
 			phone_number: "Phone Number",
 			email: "Email",
 			doctor: "Doctor",
-			sweepstakes: "I want to participate sweepstakes"
+			sweepstakes: "Enter to win FREE cord blood banking!"
 		},
 		es: {
 			first_name: "Nombre",
@@ -508,16 +508,16 @@
 			phone_number: "Teléfono",
 			email: "Correo electrónico",
 			doctor: "Médico",
-			sweepstakes: "Quiero participar sorteos"
+			sweepstakes: "Enter to win FREE cord blood banking!"
 		},
 		ru: {
 			first_name: "Имя",
 			last_name: "Фамилия",
-			due_date: "Ожидаемая дата",
+			due_date: "Ожидаемая дата родов",
 			phone_number: "Номер телефона",
 			email: "Email",
 			doctor: "Доктор",
-			sweepstakes: "Я хочу участвовать в лотерее"
+			sweepstakes: "Enter to win FREE cord blood banking!"
 		},
 		it: {
 			first_name: "Nome",
@@ -526,7 +526,7 @@
 			phone_number: "Numero di telefono",
 			email: "Email",
 			doctor: "Doctor",
-			sweepstakes: "Voglio partecipare lotterie"
+			sweepstakes: "Enter to win FREE cord blood banking!"
 		},
 		cn: {
 			first_name: "名",
@@ -535,7 +535,7 @@
 			phone_number: "电话号码",
 			email: "电子邮件",
 			doctor: "醫生",
-			sweepstakes: "我要参加抽奖"
+			sweepstakes: "Enter to win FREE cord blood banking!"
 		},
 		tw: {
 			first_name: "名",
@@ -544,7 +544,7 @@
 			phone_number: "電話號碼",
 			email: "電子郵件",
 			doctor: "醫生",
-			sweepstakes: "我要參加抽獎"
+			sweepstakes: "Enter to win FREE cord blood banking!"
 		}
 	};
 	

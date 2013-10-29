@@ -351,7 +351,7 @@ body {
 	text-align: center;
 }
 
-.title {
+div.title {
 	position: absolute;
 	top: 20%;
 	left: 0;
@@ -360,7 +360,7 @@ body {
 	display: block;
 }
 
-.title h1 {
+div.title h1#title {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 58px;
 	font-weight: bold;
@@ -369,7 +369,7 @@ body {
 	line-height:60px;
 }
 
-.subtitle {
+div.subtitle {
 	position: relative;
 	width: 100%;
 	height: 120px;
@@ -378,11 +378,11 @@ body {
 	display: block;
 }
 
-.page0 .subtitle, .page4 .subtitle {
+.page0 div.subtitle, .page4 div.subtitle {
 	margin-top: 8px;
 }
 
-.subtitle h2 {
+div.subtitle h2#subtitle {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -509,7 +509,7 @@ label {
 	font-size:16px;
 }
 
-.page0 .title, .page4 .title {
+.page0 div.title, .page4 div.title {
 	top:13%;
 }
 
