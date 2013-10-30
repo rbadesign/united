@@ -1815,9 +1815,19 @@
 		debugWrite("createPagesIfNotExists","end");
 	}
 	
+	function sleep(milliseconds) {
+	  var start = new Date().getTime();
+	  for (var i = 0; i < 1e7; i++) {
+	    if ((new Date().getTime() - start) > milliseconds){
+	      break;
+	    }
+	  }
+	}
+
 	$(window).one('load',function(e) {
 		debugWrite('load', 'start');
-	
+		sleep(2000);
+		
 		// Переадресация на мобильную версию
 		debugWrite("Переадресация на мобильную версию","start");
 		if($.browser.mobile && !isCordova() && !isKioskPro()) {
