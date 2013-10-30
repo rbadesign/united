@@ -36,8 +36,21 @@
 	
 	// Дефолтные значения передаваемых аргументов
 	// Аргументы передаются в виде строки адреса,
-	// либо задаются в параметре iPadID в формате имя=значение&имя=значение&имя=значение&...
+	// либо задаются в параметре iPadID
+	// в формате имя1=значение1&имя2=значение2&имя3=значение3&...
+	// Переданные в скрипт аргументы используются в шаблонах заголовков страниц
+	// и в качестве дефолтных значений полей форм ввода.
+	// Примечание - строка должна быть urlencoded
 	// Пример: 
+	//    WWW    http://sweepstakes.com?doctor=Doctor%20No
+	//    iPad   doctor=Doctor%20No
+	// Arguments are sent as browser's address
+	// or as value of iPadID
+	// with format name1=value1&name2=value2&name3=value3&...
+	// Send arguments to script will apply to page header templates
+	// or as default values of input fields of forms.
+	// NB - string must be urlencoded
+	// Examples:
 	//    WWW    http://sweepstakes.com?doctor=Doctor%20No
 	//    iPad   doctor=Doctor%20No
 	var args = {
