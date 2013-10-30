@@ -11,6 +11,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 (function ($) {
+	// Задание назначения скрипта
+	// Значения:
+	//		kioskpro - использование на iPad в программе KioskPro
+	//		browser - использование на сайте для браузеров
+	// Примечание - параметр введён в связи с ошибкой в KioskPro v3.4.1
+	var target = "kioskpro";
+	
 	// Определение способа воспроизведения видео с YouTube
 	// Значения:
 	//     tubeplayer   - использование плагина Tubeplayer (http://www.tikku.com/jquery-youtube-tubeplayer-plugin)
@@ -599,6 +606,8 @@
 	}
 	
 	function isKioskPro() {
+		return target == "kioskpro";
+		
 		var bool = true;
 		try {
 			bool = kioskpro_id.toString().split(" ").join("") != "";
@@ -1826,7 +1835,7 @@
 
 	$(window).one('load',function(e) {
 		debugWrite('load', 'start');
-		sleep(2000);
+//		sleep(2000);
 		
 		// Переадресация на мобильную версию
 		debugWrite("Переадресация на мобильную версию","start");
