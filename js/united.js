@@ -11,13 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 (function ($) {
-	// Задание назначения скрипта
-	// Значения:
-	//		kioskpro - использование на iPad в программе KioskPro
-	//		browser - использование на сайте для браузеров
-	// Примечание - параметр введён в связи с ошибкой в KioskPro v3.4.1
-	var target = "kioskpro";
-	
 	// Определение способа воспроизведения видео с YouTube
 	// Значения:
 	//     tubeplayer   - использование плагина Tubeplayer (http://www.tikku.com/jquery-youtube-tubeplayer-plugin)
@@ -594,11 +587,17 @@
 		tw: "繁體中文"
 	};
 	
+	try {
+		var kioskId = (kioskpro_id.toString().split(" ").join(""));
+		localStorage.setItem("KioskProID", kioskId);
+	} catch (e) {
+	}
+	
 	// Определение ID, заданного в Kiosk Pro
 	function getID() {
 		var iPadID = "iPadID is not set";
 		try {
-			iPadID = kioskpro_id.toString().split(" ").join("");
+			iPadID = localStorage.getItem("KioskProID");
 		} catch(e) {
 			iPadID = "iPadID is not set";
 		}
@@ -606,11 +605,10 @@
 	}
 	
 	function isKioskPro() {
-		return target == "kioskpro";
-		
 		var bool = true;
 		try {
-			bool = kioskpro_id.toString().split(" ").join("") != "";
+			var iPadID = localStorage.getItem("KioskProID");
+			bool = iPadID && iPadID != "";
 		} catch(e) {
 			bool = false;
 		}
@@ -1970,17 +1968,15 @@
 	
 		debugWrite("Заполняем аргументы значениями указанными в iPadID","start");
 		try {
-			if(!isKioskPro()) {
-			} else {
-			  var iPadID = kioskpro_id.toString().split(" ").join("");
-			  if (!iPadID || iPadID == "") {
-			  } else {
-				   iPadID.split("&").forEach(function (value,index) {
+			if(isKioskPro()) {
+				var iPadID = localStorage.getItem("KioskProID");
+				if (iPadID && iPadID != "") {
+					iPadID.split("&").forEach(function (value,index) {
 						var ar = value.split("=");
 						debugWrite(ar[0],ar[1]);
 						args[ar[0]]=urldecode(ar[1]);
 					});
-			  }
+				}
 			}
 		} catch (e) {
 			debugWrite('getID().split("&").forEach error',e);
