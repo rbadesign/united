@@ -228,15 +228,15 @@
 			videoHome: { buttonClass:"button-small-mini", text:"首頁" },
 			videoStop: { buttonClass:"button-small-mini", text:"完成" },
 			videoContact: { buttonClass:"button-mini", text:"有疑问吗？" },
-			videoTip: { buttonClass:"", text:"在这里，你可以使自己的语言的字幕" },
-			videoSorry: { buttonClass:"", text:"我们深表歉意，但录像显示，仅在英语" }
+			videoTip: { buttonClass:"", text:"您可以在此启用您自己的语言字幕" },
+			videoSorry: { buttonClass:"", text:"对不起，该視頻仅有英文版" }
 		},
 		tw: {
 			videoHome: { buttonClass:"button-small-mini", text:"首頁" },
 			videoStop: { buttonClass:"button-small-mini", text:"完成" },
 			videoContact: { buttonClass:"button-mini", text:"有疑問嗎？" },
-			videoTip: { buttonClass:"", text:"在這裡，你可以使自己的語言的字幕" },
-			videoSorry: { buttonClass:"", text:"我們深表歉意，但錄像顯示，僅在英語" }
+			videoTip: { buttonClass:"", text:"您可以在此啟用您自己的語言字幕" },
+			videoSorry: { buttonClass:"", text:"對不起，該視頻僅有英文版" }
 		}
 	};
 	
@@ -308,7 +308,7 @@
 			home: { buttonClass:"button", text:"首頁" },
 			contact: { buttonClass:"button", text:"有疑问吗？" },
 			save: { buttonClass:"button", text:"提交" },
-			skip: { buttonClass:"button-mini", text:"跳跃" },
+			skip: { buttonClass:"button-mini", text:"跳过" },
 			remark: { buttonClass:"", text:"Cryo-Cell的脐血教育人员有可能会和您联络，以解答您对脐血的相关疑问。" },
 			rules: { buttonClass:"", text:"此活动须遵守其正式规则。" }
 		},
@@ -321,7 +321,7 @@
 			home: { buttonClass:"button", text:"首頁" },
 			contact: { buttonClass:"button", text:"有疑問嗎？" },
 			save: { buttonClass:"button", text:"提交" },
-			skip: { buttonClass:"button-mini", text:"跳躍" },
+			skip: { buttonClass:"button-mini", text:"跳過" },
 			remark: { buttonClass:"", text:"Cryo-Cell的臍血教育人員有可能會和您聯絡，以解答您對此活動須遵守其正式規則臍血的相關疑問。" },
 			rules: { buttonClass:"", text:"此活動須遵守其正式規則" }
 		}
@@ -438,53 +438,53 @@
 		cn: {
 			page0: { 
 				title: "了解有关脐带血的储存！",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性<br />。该视频为我们會同Parent's Guide to Cord Blood基金会，为教育准父母有关救生选项所制作的。<br />请继续填写下表："
 			},
 			page1: { 
 				title: "为什么您应该储存宝宝的脐带血？",
-				subtitle: "请观赏一个有关脐带血干细胞的动画短视频。"
+				subtitle: "请观赏一段有关脐带血干细胞的动画短视频。"
 			},
 			page2: {
 				title: "脐带血如何能挽救生命？",
-				subtitle: "请观赏一个3分钟的视频：一个家庭的故事。"
+				subtitle: "请观赏一段3分钟的视频：一个家庭的故事。"
 			},
 			page3: { 
 				title: "为何选择Cryo-Cell?",
-				subtitle: "请观赏一个短视频，为您介绍领先世界的脐带血公司。"
+				subtitle: "请观赏一段短视频，为您介绍领先世界的脐带血公司。"
 			},
 			page4: { 
 				title: "谢谢",
-				subtitle: "希望这些短视频为您提供了翔实的资讯。<br />若想更了解我们的服务，请填写下面的联系表格。"
+				subtitle: "希望这些短视频对您有所助益。<br />若想更加了解我们的服务，请填写下列联系表格。"
 			},
 			page5: { 
 				title: "谢谢",
-				subtitle: "您的要求已发送<br />我们的客户服务代表将很快地与您联系."
+				subtitle: "您的要求已送出<br />我们的客户服务代表将很快地与您联系."
 			}
 		},
 		tw: {
 			page0: { 
 				title: "了解有關臍帶血的儲存！",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性<br />。該視頻為我們会同Parent's Guide to Cord Blood基金會，為教育準父母有關救生選項所製作的。<br />請繼續填寫下表："
 			},
 			page1: { 
 				title: "為什麼您應該儲存寶寶的臍帶血？",
-				subtitle: "請觀賞一個有關臍帶血幹細胞的卡通短視頻。"
+				subtitle: "請觀賞一段有關臍帶血幹細胞的卡通短視頻。"
 			},
 			page2: {
 				title: "臍帶血如何能挽救生命？",
-				subtitle: "請觀賞一個3分鐘的視頻：一個家庭的故事。"
+				subtitle: "請觀賞一段3分鐘的視頻：一個家庭的故事。"
 			},
 			page3: { 
 				title: "為何選擇Cryo-Cell？",
-				subtitle: "請觀賞一個短視頻，為您介紹領先世界的臍帶血公司"
+				subtitle: "請觀賞一段短視頻，為您介紹領先世界的臍帶血公司"
 			},
 			page4: { 
 				title: "謝謝",
-				subtitle: "希望這些短視頻為您提供了翔實的資訊。<br />若想更了解我們的服務，請填寫下面的聯繫表格。"
+				subtitle: "希望這些短視頻對您有所助益。<br />若想更加了解我們的服務，請填寫下列聯繫表格。"
 			},
 			page5: { 
 				title: "謝謝",
-				subtitle: "您的要求已發送<br />我們的客戶服務代表將很快地與您聯繫."
+				subtitle: "您的要求已送出<br />我們的客戶服務代表將很快地與您聯繫."
 			}
 		}
 	};
@@ -535,7 +535,7 @@
 			phone_number: "电话号码",
 			email: "电子邮件",
 			doctor: "醫生",
-			sweepstakes: "Enter to win FREE cord blood banking!"
+			sweepstakes: "参加抽奖，赢取免费的脐血储存！"
 		},
 		tw: {
 			first_name: "名",
@@ -544,7 +544,7 @@
 			phone_number: "電話號碼",
 			email: "電子郵件",
 			doctor: "醫生",
-			sweepstakes: "Enter to win FREE cord blood banking!"
+			sweepstakes: "參加抽獎，贏取免費的臍血儲存！"
 		}
 	};
 	
