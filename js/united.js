@@ -10,6 +10,17 @@
 //
 ////////////////////////////////////////////////////////////////////////////////////////
 
+// YouTube JavaScript Player API  
+var onYouTubePlayerReady;
+var onStateChange;
+var onError;
+
+// Событие инициализации YouTube Player API
+var onYouTubePlayerAPIReady;
+var onPlayerError;
+var onPlayerReady;
+var onPlayerStateChange;
+
 (function ($) {
 	// Определение способа воспроизведения видео с YouTube
 	// Значения:
@@ -973,7 +984,7 @@
 	}
 	
 	// YouTube JavaScript Player API  
-	function onYouTubePlayerReady(playerid) {
+	onYouTubePlayerReady = function (playerid) {
 		debugWrite("onYouTubePlayerReady",playerid);
 		playerReadyDeferred[playerid].resolve();
 		var player = document.getElementById(playerid);
@@ -981,7 +992,7 @@
 		player.addEventListener("onError", "onError");		
 	}
 	
-	function onStateChange(state) {
+	onStateChange = function (state) {
 		debugWrite("onStateChange",state);
 		switch(state) {
 		case 0:
@@ -1008,27 +1019,27 @@
 		}
 	}
 	
-	function onError(error) {
+	onError = function (error) {
 		debugWrite("onError",error);
 	}
 	
 	// Событие инициализации YouTube Player API
-	function onYouTubePlayerAPIReady() {
+	onYouTubePlayerAPIReady = function () {
 		iframePlayerAPIReadyDeferred.resolve();
 	}
 	
-	function onPlayerError(event) {
+	onPlayerError = function (event) {
 		debugWrite("onPlayerError",event);
 	}
 	  
-	function onPlayerReady(event) {
+	onPlayerReady = function (event) {
 		debugWrite("onPlayerReady",event);
 		var playerid = event.target.a.id;
 		playerReadyDeferred[playerid].resolve();
 		hideBuffering();
 	}
 	  
-	function onPlayerStateChange(event) {
+	onPlayerStateChange = function (event) {
 		debugWrite("onPlayerStateChange",event);
 		switch(event.data) {
 		case YT.PlayerState.BUFFERING:
