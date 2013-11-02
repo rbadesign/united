@@ -384,7 +384,7 @@ var onPlayerStateChange;
 		es: {
 			page0: { 
 				title: "!Sangre del Cordón Umbilical!",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> lo invita a ver un breve video acerca de la importancia de preservar la sangre y el tejido del cordón umbilical de su bebé en el momento del nacimiento. Este video fue desarrollado en colaboración con Parent's Guide to Cord Blood Foundation para instruir a futuros padres sobre las opciones que potencialmente salvan vidas.<br />Por favor complete el siguiente formulario para continuar:"
 			},
 			page1: { 
 				title: "¿Por qué debe almacenar la sangre del cordón umbilical de su bebé?",
@@ -532,7 +532,7 @@ var onPlayerStateChange;
 			phone_number: "Teléfono",
 			email: "Correo electrónico",
 			doctor: "Médico",
-			sweepstakes: "Enter to win FREE cord blood banking!"
+			sweepstakes: "!Participe para ganar el almacenamiento de la sangre del cordón umbilical GRATIS!"
 		},
 		ru: {
 			first_name: "Имя",
@@ -541,7 +541,7 @@ var onPlayerStateChange;
 			phone_number: "Номер телефона",
 			email: "Email",
 			doctor: "Доктор",
-			sweepstakes: "Enter to win FREE cord blood banking!"
+			sweepstakes: "Зарегистрироваться, чтобы выиграть БЕСПЛАТНОЕ хранение пуповинной крови!"
 		},
 		it: {
 			first_name: "Nome",

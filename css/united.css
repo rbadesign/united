@@ -391,6 +391,10 @@ div.subtitle h2#subtitle {
 	line-height: 28px;
 }
 
+.page0.es h2#subtitle {
+	font-size: 18px;
+}
+
 #callbackForm {
 	width: 760px;
 	height: 240px;
@@ -425,6 +429,11 @@ label {
 	display: inline-block;
 }
 
+.page0.ru label[for="sweepstakes"],
+.page0.es label[for="sweepstakes"] {
+	font-size: 18px;
+}
+
 .save {
 	position:absolute;
 	left:50%;
@@ -453,6 +462,10 @@ label {
 	display: block;
 	left: 0px;
 	color: #1075a6;
+}
+
+.page0.es .remark {
+	font-size: 12px;
 }
 
 .rules {
