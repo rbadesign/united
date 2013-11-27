@@ -114,8 +114,8 @@ var onPlayerStateChange;
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
-					{ src:"video/Cryo-Cell-Replication_Master-1280.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
-					{ src:"video/Cryo-Cell-Replication_Master-1280.ogv", type:'video/ogg; codecs="theora, vorbis"' }
+					{ src:"video/Cryo-Cell-Corporate_Master_LAS_1.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
+					{ src:"video/Cryo-Cell-Corporate_Master_LAS_1.ogv", type:'video/ogg; codecs="theora, vorbis"' }
 				]
 			}
 		},
