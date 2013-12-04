@@ -421,12 +421,17 @@ input[type="text"], input[type="tel"], input[type="date"], input[type="email"] {
 	vertical-align:middle;
 	text-align:center
 }
+
 label {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 24px;
 	text-align:left;
 	vertical-align: middle;
 	display: inline-block;
+}
+
+.es label {
+	font-size: 22px;
 }
 
 .page0.ru label[for="sweepstakes"],

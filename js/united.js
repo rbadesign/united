@@ -294,7 +294,7 @@ var onPlayerStateChange;
 			contact: { buttonClass:"button", text:"¿Tiene preguntas?" },
 			save: { buttonClass:"button", text:"Enviar" },
 			skip: { buttonClass:"button-mini", text:"Omitir" },
-			remark: { buttonClass:"", text:"Usted puede que sea contactado por uno de los educadores de Cryo-Cell para responder cualquier pregunta que usted tenga acerca del cordón umbilical." },
+			remark: { buttonClass:"", text:"Usted puede que sea contactado por uno de los educadores de Cryo-Cell, para responder cualquier pregunta que usted tenga acerca del cordón umbilical." },
 			rules: { buttonClass:"", text:"Esta promoción está sujeta a las normas oficiales." }
 		},
 		ru: {
@@ -528,7 +528,7 @@ var onPlayerStateChange;
 		es: {
 			first_name: "Nombre",
 			last_name: "Apellido",
-			due_date: "Fecha estimada",
+			due_date: "Fecha estimada de parto",
 			phone_number: "Teléfono",
 			email: "Correo electrónico",
 			doctor: "Médico",
