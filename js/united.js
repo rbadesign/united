@@ -79,21 +79,36 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/CC_an_13.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/CC_an_13.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video2: { 
 				videoId: "vYdjHhDGAUI",
 				sources: [ 
 					{ src:"video/One-Life-Saved-FINAL.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/One-Life-Saved-FINAL.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
 					{ src:"video/Cryo-Cell-Replication_Master-1280.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cryo-Cell-Replication_Master-1280.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			}
 		},
 		es: {
@@ -102,44 +117,238 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/CC_an_13_Spanish.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/CC_an_13_Spanish.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video2: { 
 				videoId: "vYdjHhDGAUI",
 				sources: [ 
 					{ src:"video/One-Life-Saved-Spanish-FINAL.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/One-Life-Saved-Spanish-FINAL.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
 					{ src:"video/Cryo-Cell-Corporate_Master_LAS_1.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cryo-Cell-Corporate_Master_LAS_1.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			}
 		},
 		ru: {
 			video1: { 
 				videoId: "uuqGzMd808c",
 				sources: [ 
-					{ src:"video/CC_an_13.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
-					{ src:"video/CC_an_13.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+					{ src:"video/Cord_Blood_Educational_Video_Russian.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
+					{ src:"video/Cord_Blood_Educational_Video_Russian.ogv", type:'video/ogg; codecs="theora, vorbis"' }
+				],
+				srt: {
+					data: "video/Cord_Blood_Educational_Video_Russian.srt",
+					text: hereDoc(function() {/*!
+1
+00:00:04,000 --> 00:00:09,950
+Познакомтесь с типичной американской семьей. Они молоды, красивы и ... она беременна.Поздравляем!
+
+2
+00:00:10,000 --> 00:00:13,950
+Новый ребенок приносит  новые возможности и целый ряд решений
+
+3
+00:00:14,000 --> 00:00:18,450
+Одним из наиболее важных решений является хранить ли пуповинную кровь ребенка и ткани.
+
+4
+00:00:18,540 --> 00:00:24,790
+Мы слышали о хранении пуповинной крови, но мы действительно не знаем, почему мы должны замораживать пуповинную кровь нашего ребенка.
+
+5
+00:00:24,800 --> 00:00:27,300
+А Вы храните пуповинную кровь ваших детей?
+
+6
+00:00:27,350 --> 00:00:34,950
+Конечно, я храню - для всех моих детей! Если у вас есть возможность сохранить стволовые вашего ребенка клетки, вы определенно должны это сделать. Позвольте мне объяснить.
+
+7
+00:00:35,000 --> 00:00:40,900
+Пуповинная кровь и ткани содержат стволовые клетки, строительные блоки всех других тканей в нашем организме.
+
+8
+00:00:41,000 --> 00:00:49,900
+Стволовые клетки пуповинной крови используются для лечения около 80 заболеваний, включая церебральный паралич, лейкемии, аутоиммунные заболевания и генетические нарушения.
+
+9
+00:00:50,000 --> 00:00:51,800
+Ого!
+
+10
+00:00:51,850 --> 00:00:58,950
+Конечно! А на самом деле, как мы становимся старше, многие из этих условий становятся более распространенными, поэтому потребность в этих стволовых клеток может увеличиваться с течением времени
+
+11
+00:00:59,080 --> 00:01:04,280
+В самом деле, более 30 000 трансплантаций пуповинной крови стволовых клеток уже были выполнены.
+
+12
+00:01:04,370 --> 00:01:06,370
+Новые методы лечения появляются практически каждый день.
+
+13
+00:01:06,500 --> 00:01:12,850
+Сохранение стволовых клеток Вашего новорожденного – это одна из самых лучших инвестиций которую вы можете сделать для вашего ребенка и вашей семьи.
+
+14
+00:01:12,900 --> 00:01:14,900
+Нашей семьи?
+
+15
+00:01:15,000 --> 00:01:21,000
+Да. Пуповинная кровь может быть использована для лечения вашего ребенка, братьев и сестер или других близких членов семьи, в зависимости от заболевания.
+
+16
+00:01:21,150 --> 00:01:26,650
+Вероятность соответствия пересадки гораздо больше, от родственника, чем от неродственного донора.
+
+17
+00:01:26,800 --> 00:01:30,400
+И при пересадке пациенты выздоравливают лучше, когда донор стволовых клеток близкий родственник.
+
+18
+00:01:30,540 --> 00:01:34,540
+Вы также должны воспользоваться возможностью хранить стволовые клетки, которые находятся в тканях пуповины.
+
+19
+00:01:34,640 --> 00:01:36,840
+Эти стволовые клетки другого типа и весьма перспективны.
+
+20
+00:01:36,910 --> 00:01:48,460
+Они изучаются для лечения в будущем таких болезней, которые более распространены в пожилом возрасте, такие как инфаркт миокарда, инсульт, болезнь Паркинсона, диабет и другие заболевания.
+
+21
+00:01:48,600 --> 00:01:51,500
+Это потрясающе. Но есть ли здесь какие нибудь риски?
+
+22
+00:01:51,550 --> 00:01:58,400
+Сбор пуповинной крови и ткани после рождения вашего ребенка занимает несколько минут и не представляет абсолютно никакого риска для матери или ребенка.
+
+23
+00:01:58,450 --> 00:02:02,650
+Но  у Вас будет только одна возможность для заморозки этих ценных клеток.
+
+24
+00:02:02,800 --> 00:02:04,800
+Сколько это будет стоить?
+
+25
+00:02:05,000 --> 00:02:11,700
+Сбор и хранение пуповинной крови в частном банке стволовых клеток будет стоит около $ 2000 плюс небольшая ежегодная плата за хранение.
+
+26
+00:02:11,800 --> 00:02:15,900
+Банк хранит это в криогенных морозильниках для исключительного использования вашей семьей.
+
+27
+00:02:16,000 --> 00:02:18,300
+Кредитные планы позволяют сделать это очень доступным.
+
+28
+00:02:18,400 --> 00:02:20,400
+Есть ли другие способы?
+
+29
+00:02:20,500 --> 00:02:23,800
+Если вы не захотите хранить стволовые вашего ребенка клетки для своей семьи,
+
+30
+00:02:23,850 --> 00:02:29,450
+Вы сможете пожертвовать их в общественный банк для использования другими лицами, которые имеют неотложную медицинскую необходимость.
+
+31
+00:02:29,500 --> 00:02:34,090
+Каждый год тысячи пациентов ищут подходящего донора в общественном банке,
+
+32
+00:02:34,150 --> 00:02:37,500
+и стволовых вашего ребенка клетки могут подойти, чтобы спасти чью-то жизнь.
+
+33
+00:02:37,550 --> 00:02:44,350
+Однако, как только вы сдадите их в общественный банк, они не могут быть доступны для вашего ребенка или семьи в будущем.
+
+34
+00:02:44,200 --> 00:02:48,000
+В этом случае, вам придется самим надеяться, что совпадение для Вас придет во время
+
+35
+00:02:48,120 --> 00:02:57,920
+По состоянию на 2013 год, расходы на приобретение соответствующих стволовых клеток из общественного банка составляет около $ 35 000 и включены в качестве части платы за больничное лечение.
+
+36
+00:02:58,000 --> 00:03:00,400
+Но как мы узнаем, какой частный банк выбрать?
+
+37
+00:03:00,450 --> 00:03:03,850
+Взвесте все, прежде чем выбрать банк для хранения пуповинной крови.
+
+38
+00:03:04,020 --> 00:03:11,270
+Проверьте аккредитации, записи успешного терапевтического применения и гарантии
+
+39
+00:03:11,350 --> 00:03:13,450
+Через несколько месяцев
+
+40
+00:03:13,510 --> 00:03:15,810
+Родовая палата
+
+41
+00:03:21,000 --> 00:03:24,750
+Спокойствие для всей вашей семьи.
+
+*/})
+				}
 			},
 			video2: { 
 				videoId: "vYdjHhDGAUI",
 				sources: [ 
 					{ src:"video/One-Life-Saved-FINAL.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/One-Life-Saved-FINAL.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
 					{ src:"video/Cryo-Cell-Replication_Master-1280.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cryo-Cell-Replication_Master-1280.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			}
 		},
 		it: {
@@ -148,21 +357,36 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/CC_an_13.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/CC_an_13.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video2: { 
 				videoId: "vYdjHhDGAUI",
 				sources: [ 
 					{ src:"video/One-Life-Saved-FINAL.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/One-Life-Saved-FINAL.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
 					{ src:"video/Cryo-Cell-Replication_Master-1280.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cryo-Cell-Replication_Master-1280.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			}
 		},
 		cn: {
@@ -178,14 +402,24 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/One-Life-Saved-FINAL.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/One-Life-Saved-FINAL.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
 					{ src:"video/Cryo-Cell-Replication_Master-1280.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cryo-Cell-Replication_Master-1280.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			}
 		},
 		tw: {
@@ -201,14 +435,24 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/One-Life-Saved-FINAL.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/One-Life-Saved-FINAL.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video3: { 
 				videoId: "BJUN4LrXi88#!",
 				sources: [ 
 					{ src:"video/Cryo-Cell-Replication_Master-1280.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cryo-Cell-Replication_Master-1280.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			}
 		}
 	};
@@ -1151,6 +1395,12 @@ var onPlayerStateChange;
 	  return decodeURIComponent((str + '').replace(/\+/g, '%20'));
 	}
 	
+	function hereDoc(f) {
+	  return f.toString().
+		  replace(/^[^\/]+\/\*!?/, '').
+		  replace(/\*\/[^\/]+$/, '');
+	}
+	
 	// Функция вывода сообщений трассировки
 	// Обработка try-catch требуется для совместимости с IE
 	function debugWrite(a,b) {
@@ -1314,14 +1564,18 @@ var onPlayerStateChange;
 			page.append(player);
 			debugWrite(PlayerApi,player);		
 		} else {
-			var video = "<video id='player-"+page.attr("id")+"' width='1024px' height='648px' controls>";
+			var player_id = "player-"+page.attr("id");
+			var video = "<video id='"+player_id+"' width='1024px' height='648px' controls>";
 			videos[lang][pageId].sources.forEach(function(value,index) {
 				video += "<source src='"+value.src+"' type='"+value.type+"'>";
 			});
 			video += "This browser does not support HTML5 video";
 			video += "</video>";
+			var srt = "<div class='srt' data-video='"+player_id+"' >"+videos[lang][pageId].srt.text+"</div>";
 			page.append(video);
+			page.append(srt);
 			debugWrite("video",video);
+			debugWrite("video",srt);
 		}
 		
 		// Добавляем кнопки, отображаемые на странице видео при остановке вопроизведения видео
@@ -1349,23 +1603,35 @@ var onPlayerStateChange;
 		page.find("video").each(function(i,e) {
 			var player = e;
 			var playerid = $(e).attr("id");
+			var srt = $('.srt',page);
+			$(player).data("page",page);
+  			setSubtitles(srt);
 			playerActivated[playerid] = !isMobileSafari();
 			player.addEventListener("ended", function(e){
+				var page = $(this).data("page");
+				var srt = $('.srt',page);
 				hideCurrentVideoMenu();
 				hideCurrentVideo();
 				hideBuffering();
 				currentIndex = nextIndex(currentIndex);
 				showCurrentMenu();
+				pauseSubtitles(srt);
 			}, false);
 			player.addEventListener("playing", function(e){
+				var page = $(this).data("page");
+				var srt = $('.srt',page);
 				activateCurrentPlayer();
 				hideBuffering();
 				hideCurrentVideoMenu();
 				showCurrentVideo();
 				hideCurrentMenu();
+ 				playSubtitles(srt);
 			}, false);
 			player.addEventListener("pause", function(e){
+				var page = $(this).data("page");
+				var srt = $('.srt',page);
 				showCurrentVideoMenu();
+				pauseSubtitles(srt);
 			}, false);
 			player.addEventListener("waiting", function(e){
 				showBuffering();
@@ -1408,6 +1674,115 @@ var onPlayerStateChange;
 		});
 	
 		debugWrite("createVideoPage","end");
+
+  function playSubtitles(subtitleElement) {
+	var timer = subtitleElement.data("timer");
+	timer.play();
+  }
+  function pauseSubtitles(subtitleElement) {
+	var timer = subtitleElement.data("timer");
+	timer.pause();
+  }
+  function stopSubtitles(subtitleElement) {
+	var timer = subtitleElement.data("timer");
+	timer.stop();
+  }
+
+/*
+ * jQuery srt
+ *
+ * version 0.1 (November 28, 2008)
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+/*
+  usage:
+    <video src="example.ogg" id="examplevideo" />
+    <div class="srt" data-video="examplevideo" data-srt="example.srt"></div>
+
+  jquery.srt.js will try to load subtitles in all elements with 'srt' class.
+  'data-video' atribute is used to link to the related video,
+  if no data-srt is provided, the contents of the div is parsed as srt.
+*/
+
+  
+//$(document).ready(function() {
+  function toSeconds(t) {
+    var s = 0.0
+    if(t) {
+      var p = t.split(':');
+      for(i=0;i<p.length;i++)
+        s = s * 60 + parseFloat(p[i].replace(',', '.'))
+    }
+    return s;
+  }
+  function strip(s) {
+    return s.replace(/^\s+|\s+$/g,"");
+  }
+  function setSubtitles(subtitleElement) {
+    var videoId = subtitleElement.attr('data-video');
+    var srt = subtitleElement.text();
+    subtitleElement.text('');
+    srt = srt.replace(/\r\n|\r|\n/g, '\n')
+    
+    var subtitles = {};
+    srt = strip(srt);
+    var srt_ = srt.split('\n\n');
+	last = -1;
+    for(s in srt_) {
+        st = srt_[s].split('\n');
+        if(st.length >=2) {
+          n = st[0];
+          i = strip(st[1].split(' --> ')[0]);
+          o = strip(st[1].split(' --> ')[1]);
+          t = st[2];
+          if(st.length > 2) {
+            for(j=3; j<st.length;j++)
+              t += '\n'+st[j];
+          }
+          is = toSeconds(i);
+          os = toSeconds(o);
+		  last = Math.max(parseInt(is),last+1);
+          subtitles[last] = {i:i, o: o, t: t};
+		  debugWrite ("#"+last,subtitles[last].i+" --> "+subtitles[last].o+" "+subtitles[last].t);
+        }
+    }
+    var currentSubtitle = -1;
+    var timer = $.timer(function() {
+      var currentTime = document.getElementById(videoId).currentTime;
+      var subtitle = -1;
+      for(s in subtitles) {
+        if(s > currentTime)
+          break
+        subtitle = s;
+      }
+      if(subtitle > 0) {
+        if(subtitle != currentSubtitle) {
+          subtitleElement.html(subtitles[subtitle].t);
+          currentSubtitle=subtitle;
+        } else if(subtitles[subtitle].o < currentTime) {
+          subtitleElement.html('');
+        }
+      }
+    });
+	timer.set({ time : 100, autostart : false });
+	subtitleElement.data("timer",timer);
+  }
+//  $('.srt',page).each(function() {
+//    var subtitleElement = $(this);
+//    var videoId = subtitleElement.attr('data-video');
+//    if(!videoId) return;
+//    var srtUrl = subtitleElement.attr('data-srt');
+//    if(srtUrl) {
+//      $(this).load(srtUrl, function (responseText, textStatus, req) { playSubtitles(subtitleElement)})
+//	  debugWrite("load srt",$(this).text());
+//    } else {
+//      playSubtitles(subtitleElement);
+//    }
+//  });
+//});
 	}
 	
 	var oDropdowns = Array();

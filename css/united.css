@@ -579,3 +579,17 @@ label.error {
 img {
 	border:none;
 }
+.srt {
+	font-size: 36px;
+	font-weight: bold;
+	color: #FFF;
+	display: block;
+	position: absolute;
+	height: 25%;
+	left: 20px;
+	right: 20px;
+	bottom: 0px;
+	text-align: center;
+	pointer-events: none;
+	text-shadow: 5px 5px 10px black;
+}
