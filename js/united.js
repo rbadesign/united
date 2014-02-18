@@ -395,7 +395,12 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/Cord_Blood_Educational_Video_Simplified_Chinese_1.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cord_Blood_Educational_Video_Simplified_Chinese_1.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video2: { 
 				videoId: "vYdjHhDGAUI",
@@ -428,7 +433,12 @@ var onPlayerStateChange;
 				sources: [ 
 					{ src:"video/Cord_Blood_Educational_Video_Traditional_Chinese_1.mp4", type:'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' },
 					{ src:"video/Cord_Blood_Educational_Video_Traditional_Chinese_1.ogv", type:'video/ogg; codecs="theora, vorbis"' }
-				]
+				],
+				srt: {
+					data: "",
+					text: hereDoc(function() {/*!
+*/})
+				}
 			},
 			video2: { 
 				videoId: "vYdjHhDGAUI",
