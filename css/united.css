@@ -354,19 +354,43 @@ body {
 div.title {
 	position: absolute;
 	top: 20%;
-	left: 0;
-	right: 0;
+	left: 2%;
+	right: 2%;
 	text-align: center;
 	display: block;
 }
 
 div.title h1#title {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 58px;
+	font-size: 48px;
 	font-weight: bold;
 	color: #1075a6;
 	margin:0;
-	line-height:60px;
+	line-height:56px;
+}
+
+div.preamble {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	margin-top: 0;
+	text-align: center;
+	display: block;
+}
+
+div.preamble h3#preamble {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #1075a6;
+	margin:0;
+	line-height:20px;
+}
+
+.page0.ru div.preamble h3#preamble {
+	font-size: 12px;
+	line-height:16px;
 }
 
 div.subtitle {
@@ -378,7 +402,7 @@ div.subtitle {
 	display: block;
 }
 
-.page0 div.subtitle, .page4 div.subtitle {
+.page4 div.subtitle {
 	margin-top: 8px;
 }
 
@@ -391,8 +415,30 @@ div.subtitle h2#subtitle {
 	line-height: 28px;
 }
 
-.page0.es h2#subtitle {
+.page0 div.subtitle h2#subtitle {
+	margin-top: 8px;
+	font-size: 16px;
+	line-height:20px;
+}
+
+.page0 div.title h1#title {
+	margin-top: 40px;
+	font-size: 28px;
+	line-height:32px;
+}
+.page0.es div.subtitle h2#subtitle {
 	font-size: 18px;
+	line-height:22px;
+}
+
+.page0.ru div.subtitle h2#subtitle {
+	font-size: 14px;
+	line-height:16px;
+}
+
+.page0.en div.subtitle h2#subtitle {
+	font-size: 20px;
+	line-height:22px;
 }
 
 #callbackForm {

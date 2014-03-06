@@ -604,165 +604,482 @@ var onPlayerStateChange;
 			rules: { buttonClass:"", text:"此活動須遵守其正式規則" }
 		}
 	};
+	// Шаблоны форм, отображаемых на страницах
+	// Задаются в виде html кода
+	var pageForms = {
+		page0: { 
+			form: hereDoc(function() {/*!
+<form id="callbackForm" action="http://promos.cryo-cell.com/fsg?pageId=8ec38da2-ccb3-11e2-a1f8-12313e0080a1&variant=a" method="POST">
+<input type="hidden" name="pageId" value="8ec38da2-ccb3-11e2-a1f8-12313e0080a1"/>
+<input type="hidden" name="pageVariant" value="a"/>    
+<input type="hidden" name="url" value=""/>
+<input type="hidden" name="ipad_id" value=""/>
+    <table width="100%" border="0" cellpadding="2" cellspacing="0">
+    	<tr>
+            <td width="35%" align="left"><label for="first_name">First Name</label></td>
+            <td width="65%"><input type="text" id="first_name" name="first_name" class="required" /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="last_name" class="main">Last Name</label></td>
+            <td><input type="text" id="last_name" name="last_name" class="required" /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="due_date" class="main">Expected Delivery Date</label></td>
+            <td><input type="date" id="due_date" name="due_date" class="" /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="phone_number" >Phone Number</label></td>
+            <td><input type="tel" id="phone_number" name="phone_number" class="required" /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="email" >Email</label></td>
+            <td><input type="email" id="email" name="email" class="required email"/></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="doctor" >Doctor</label></td>
+            <td><input type="text" id="doctor" name="doctor" class="required"/></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" valign="middle"><input type="checkbox" id="sweepstakes" name="sweepstakes" class="styled" checked="checked" /><label for="sweepstakes" >I want to participate sweepstakes</label></td>
+        </tr>
+    </table>
+</form>
+*/}),
+		},
+		page1: { 
+			form: hereDoc(function() {/*!
+*/}),
+		},
+		page2: { 
+			form: hereDoc(function() {/*!
+*/}),
+		},
+		page3: { 
+			form: hereDoc(function() {/*!
+*/}),
+		},
+		page4: { 
+			form: hereDoc(function() {/*!
+<form id="callbackForm" action="http://promos.cryo-cell.com/fsg?pageId=8ec38da2-ccb3-11e2-a1f8-12313e0080a1&variant=a" method="POST">
+<input type="hidden" name="pageId" value="8ec38da2-ccb3-11e2-a1f8-12313e0080a1"/>
+<input type="hidden" name="pageVariant" value="a"/>    
+<input type="hidden" name="url" value=""/>
+<input type="hidden" name="ipad_id" value=""/>
+<input type="hidden" name="havequestions" value="on"/>
+    <table width="100%" border="0" cellpadding="2" cellspacing="0">
+    	<tr>
+            <td width="35%" align="left"><label for="first_name">First Name</label></td>
+            <td width="65%"><input type="text" id="first_name" name="first_name" class="required" required /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="last_name" class="main">Last Name</label></td>
+            <td><input type="text" id="last_name" name="last_name" class="required" required /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="due_date" class="main">Expected Delivery Date</label></td>
+            <td><input type="date" id="due_date" name="due_date" class="" /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="phone_number" >Phone Number</label></td>
+            <td><input type="tel" id="phone_number" name="phone_number" class="required" required /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="email" >Email</label></td>
+            <td><input type="email" id="email" name="email" class="required email" required /></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="doctor" >Doctor</label></td>
+            <td><input type="text" id="doctor" name="doctor" class="required" required /></td>
+        </tr>
+    </table>
+</form>
+*/}),
+		},
+		page5: { 
+			form: hereDoc(function() {/*!
+*/}),
+		},
+	};
 	
-	// Шаблоны заголовков и субтитлов отображаемых на страницах
+	// Шаблоны заголовков и субтитлов, отображаемых на страницах
 	// Задаются в виде html кода
 	// Переданные аргументы могут быть вставленны в шаблон в виде ##имя##
 	var pages = {
 		en: {
 			page0: { 
-				title: "Learn about cord blood banking!",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				preamble: hereDoc(function() {/*!
+Many states mandate that expectant parents are educated on the benefits of cord blood banking.
+*/}),
+				title: hereDoc(function() {/*!
+Cryo-Cell invites you learn more about cord blood banking
+*/}),
+				subtitle: hereDoc(function() {/*!
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving your baby's cord blood and tissue at birth. This video was developed in collaboration with Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :
+*/}), 
 			},
 			page1: { 
-				title: "Why should you store<br />your baby’s cord blood?",
-				subtitle: "Watch an animated video on cord blood stem cells."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Why should you store<br />your baby’s cord blood?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Watch an animated video on cord blood stem cells.
+*/}),
 			},
 			page2: {
-				title: "How can cord blood save lives?",
-				subtitle: "Watch a 3 minute video on one family’s story."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+How can cord blood save lives?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Watch a 3 minute video on one family’s story.
+*/}),
 			},
 			page3: { 
-				title: "Why choose <span nowrap>Cryo-Cell</span>?",
-				subtitle: "Watch a video on the world’s leading cord blood company."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Why choose <span nowrap>Cryo-Cell</span>?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Watch a video on the world’s leading cord blood company.
+*/}),
 			},
 			page4: { 
-				title: "Thank you",
-				subtitle: "We hope you found these brief videos informative.<br />To learn more about our services, please fill in the contact form below."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Thank you
+*/}),
+				subtitle: hereDoc(function() {/*!
+We hope you found these brief videos informative.<br />To learn more about our services, please fill in the contact form below.
+*/}),
 			},
 			page5: { 
-				title: "Thank you",
-				subtitle: "Your request has been sent.<br />One of our client services advisors will contact you shortly."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Thank you
+*/}),
+				subtitle: hereDoc(function() {/*!
+Your request has been sent.<br />One of our client services advisors will contact you shortly.
+*/}),
 			}
 		},
 		es: {
 			page0: { 
-				title: "!Sangre del Cordón Umbilical!",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> lo invita a ver un breve video acerca de la importancia de preservar la sangre y el tejido del cordón umbilical de su bebé en el momento del nacimiento. Este video fue desarrollado en colaboración con Parent's Guide to Cord Blood Foundation para instruir a futuros padres sobre las opciones que potencialmente salvan vidas.<br />Por favor complete el siguiente formulario para continuar:"
+				preamble: hereDoc(function() {/*!
+Muchos estados exigen que los futuros padres sean educados sobre los beneficios de almacenar la sangre del cordón umbilical. 
+*/}),
+				title: hereDoc(function() {/*!
+Cryo-Cell le invita a aprender más sobre la sangre del cordón umbilical
+*/}),
+				subtitle: hereDoc(function() {/*!
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> lo invita a ver un breve video acerca de la importancia de preservar la sangre y el tejido del cordón umbilical de su bebé en el momento del nacimiento. Este video fue desarrollado en colaboración con Parent's Guide to Cord Blood Foundation para instruir a futuros padres sobre las opciones que potencialmente salvan vidas.<br />Por favor complete el siguiente formulario para continuar:
+*/}),
 			},
 			page1: { 
-				title: "¿Por qué debe almacenar la sangre del cordón umbilical de su bebé?",
-				subtitle: "Vea un breve vídeo animado sobre las células madre del cordón umbilical."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+¿Por qué debe almacenar la sangre del cordón umbilical de su bebé?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Vea un breve vídeo animado sobre las células madre del cordón umbilical.
+*/}),
 			},
 			page2: {
-				title: "¿Cómo la sangre del cordón umbilical puede salvar vidas?",
-				subtitle: "Vea el siguiente video de 3 minutos sobre la historia de una familia."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+¿Cómo la sangre del cordón umbilical puede salvar vidas?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Vea el siguiente video de 3 minutos sobre la historia de una familia.
+*/}),
 			},
 			page3: { 
-				title: "¿Por qué elegir Cryo-Cell?",
-				subtitle: "Vea un breve video sobre la compañía líder en la preservación de la sangre del cordón umbilical."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+¿Por qué elegir Cryo-Cell?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Vea un breve video sobre la compañía líder en la preservación de la sangre del cordón umbilical.
+*/}),
 			},
 			page4: { 
-				title: "Gracias",
-				subtitle: "Esperamos que haya encontrado estos breves videos muy informativos.<br />Para obtener más información, por favor complete el siguiente formulario."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Gracias
+*/}),
+				subtitle: hereDoc(function() {/*!
+Esperamos que haya encontrado estos breves videos muy informativos.<br />Para obtener más información, por favor complete el siguiente formulario.
+*/}),
 			},
 			page5: { 
-				title: "Gracias",
-				subtitle: "Su solicitud ha sido enviada.<br />Muy pronto uno de nuestros asesores de servicio al cliente se pondrá en contacto con usted."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Gracias
+*/}),
+				subtitle: hereDoc(function() {/*!
+Su solicitud ha sido enviada.<br />Muy pronto uno de nuestros asesores de servicio al cliente se pondrá en contacto con usted.
+*/}),
 			}
 		},
 		ru: {
 			page0: { 
-				title: "Узнайте о хранении крови!",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> приглашает Вас посмотреть видео о сохранении пуповинной крови<br />Вашего ребёнка. Это видео создано совместно с Parent's Guide to Cord Blood Foundation<br />с целью информирования будущих родителей о возможностях по сохранению здоровья.<br />Пожалуйста, заполните форму ниже, чтобы продолжить :"
+				preamble: hereDoc(function() {/*!
+Правительства большинства Штатов предписывают, что будущие родители должны быть осведомлены о преимуществах сохранения пуповинной крови.
+*/}),
+				title: hereDoc(function() {/*!
+Cryo-Cell предлагает Вам узнать больше о сохранении стволовых клеток из пуповинной крови
+*/}),
+				subtitle: hereDoc(function() {/*!
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> приглашает Вас посмотреть видео о сохранении пуповинной крови Вашего ребёнка. Это видео создано совместно с Parent's Guide to Cord Blood Foundation с целью информирования будущих родителей о возможностях по сохранению здоровья.<br />Пожалуйста, заполните форму ниже, чтобы продолжить :
+*/}),
 			},
 			page1: { 
-				title: "Почему Вы должны сохранить пуповинную кровь Вашего ребенка?",
-				subtitle: "Смотрите анимационное видео о стволовых клетках в пуповинной крови."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Почему Вы должны сохранить пуповинную кровь Вашего ребенка?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Смотрите анимационное видео о стволовых клетках в пуповинной крови.
+*/}),
 			},
 			page2: {
-				title: "Как пуповинная кровь<br />спасает жизнь?",
-				subtitle: "Смотрите 3-х минутное видео истории одной семьи."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Как пуповинная кровь<br />спасает жизнь?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Смотрите 3-х минутное видео истории одной семьи.
+*/}),
 			},
 			page3: { 
-				title: "Почему выбирают <span nowrap>Cryo-Cell</span>?",
-				subtitle: "Смотрите видео о ведущей компании в мире, сохраняющей пуповинную кровь."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Почему выбирают <span nowrap>Cryo-Cell</span>?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Смотрите видео о ведущей компании в мире, сохраняющей пуповинную кровь.
+*/}),
 			},
 			page4: { 
-				title: "Спасибо",
-				subtitle: "Мы надеемся, что вы нашли это видео полезным.<br />Чтобы узнать больше о наших услугах, пожалуйста, заполните форму ниже."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Спасибо
+*/}),
+				subtitle: hereDoc(function() {/*!
+Мы надеемся, что вы нашли это видео полезным.<br />Чтобы узнать больше о наших услугах, пожалуйста, заполните форму ниже.
+*/}),
 			},
 			page5: { 
-				title: "Спасибо",
-				subtitle: "Ваше сообщение было отправлено.<br />Наш представитель по обслуживанию клиентов свяжется с Вами в ближайшее время."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Спасибо
+*/}),
+				subtitle: hereDoc(function() {/*!
+Ваше сообщение было отправлено.<br />Наш представитель по обслуживанию клиентов свяжется с Вами в ближайшее время.
+*/}),
 			}
 		},
 		it: {
 			page0: { 
-				title: "Learn about cord blood banking!",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving<br />your baby's cord blood and tissue at birth. This video was developed in collaboration with<br />Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Learn about cord blood banking!
+*/}),
+				subtitle: hereDoc(function() {/*!
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving your baby's cord blood and tissue at birth. This video was developed in collaboration with Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :
+*/}),
 			},
 			page1: { 
-				title: "Why should you store<br />your baby’s cord blood?",
-				subtitle: "Watch an animated video on cord blood stem cells."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Why should you store<br />your baby’s cord blood?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Watch an animated video on cord blood stem cells.
+*/}),
 			},
 			page2: {
-				title: "How can cord blood save lives?",
-				subtitle: "Watch a 3 minute video on one family’s story."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+How can cord blood save lives?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Watch a 3 minute video on one family’s story.
+*/}),
 			},
 			page3: { 
-				title: "Perché scegliere <span nowrap>Cryo-Cell</span>?",
-				subtitle: "Watch a video on the world’s leading cord blood company."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Perché scegliere <span nowrap>Cryo-Cell</span>?
+*/}),
+				subtitle: hereDoc(function() {/*!
+Watch a video on the world’s leading cord blood company.
+*/}),
 			},
 			page4: { 
-				title: "Grazie",
-				subtitle: "We hope you found these videos informative.<br />To learn more about our services, please fill in the contact form below."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Grazie
+*/}),
+				subtitle: hereDoc(function() {/*!
+We hope you found these videos informative.<br />To learn more about our services, please fill in the contact form below.
+*/}),
 			},
 			page5: { 
-				title: "Grazie",
-				subtitle: "Your request has been sent.<br />One of our client services representatives will contact you shortly."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+Grazie
+*/}),
+				subtitle: hereDoc(function() {/*!
+Your request has been sent.<br />One of our client services representatives will contact you shortly.
+*/}),
 			}
 		},
 		cn: {
 			page0: { 
-				title: "了解有关脐带血的储存！",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性<br />。该视频为我们會同Parent's Guide to Cord Blood基金会，为教育准父母有关救生选项所制作的。<br />请继续填写下表："
+				preamble: hereDoc(function() {/*!
+许多州政府强制要求准父母必须接受有关储存脐带血的教育，以了解其诸多裨益。
+*/}),
+				title: hereDoc(function() {/*!
+Cryo-Cell在此诚邀您增进对脐带血储存的认识。
+*/}),
+				subtitle: hereDoc(function() {/*!
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性。<br />该视频为我们會同Parent's Guide to Cord Blood基金会，为教育准父母有关救生选项所制作的。<br />请继续填写下表：
+*/}),
 			},
 			page1: { 
-				title: "为什么您应该储存宝宝的脐带血？",
-				subtitle: "请观赏一段有关脐带血干细胞的动画短视频。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+为什么您应该储存宝宝的脐带血？
+*/}),
+				subtitle: hereDoc(function() {/*!
+请观赏一段有关脐带血干细胞的动画短视频。
+*/}),
 			},
 			page2: {
-				title: "脐带血如何能挽救生命？",
-				subtitle: "请观赏一段3分钟的视频：一个家庭的故事。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+脐带血如何能挽救生命？
+*/}),
+				subtitle: hereDoc(function() {/*!
+请观赏一段3分钟的视频：一个家庭的故事。
+*/}),
 			},
 			page3: { 
-				title: "为何选择Cryo-Cell?",
-				subtitle: "请观赏一段短视频，为您介绍领先世界的脐带血公司。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+为何选择Cryo-Cell?
+*/}),
+				subtitle: hereDoc(function() {/*!
+请观赏一段短视频，为您介绍领先世界的脐带血公司。
+*/}),
 			},
 			page4: { 
-				title: "谢谢",
-				subtitle: "希望这些短视频对您有所助益。<br />若想更加了解我们的服务，请填写下列联系表格。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+谢谢
+*/}),
+				subtitle: hereDoc(function() {/*!
+希望这些短视频对您有所助益。<br />若想更加了解我们的服务，请填写下列联系表格。
+*/}),
 			},
 			page5: { 
-				title: "谢谢",
-				subtitle: "您的要求已送出<br />我们的客户服务代表将很快地与您联系."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+谢谢
+*/}),
+				subtitle: hereDoc(function() {/*!
+您的要求已送出<br />我们的客户服务代表将很快地与您联系.
+*/}),
 			}
 		},
 		tw: {
 			page0: { 
-				title: "了解有關臍帶血的儲存！",
-				subtitle: "<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性<br />。該視頻為我們会同Parent's Guide to Cord Blood基金會，為教育準父母有關救生選項所製作的。<br />請繼續填寫下表："
+				preamble: hereDoc(function() {/*!
+許多州政府強制要求準父母必須接受有關儲存臍帶血的教育，以了解其諸多裨益。
+*/}),
+				title: hereDoc(function() {/*!
+Cryo-Cell在此誠邀您增進對臍帶血儲存的認識。
+*/}),
+				subtitle: hereDoc(function() {/*!
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性。<br />該視頻為我們会同Parent's Guide to Cord Blood基金會，為教育準父母有關救生選項所製作的。<br />請繼續填寫下表：
+*/}),
 			},
 			page1: { 
-				title: "為什麼您應該儲存寶寶的臍帶血？",
-				subtitle: "請觀賞一段有關臍帶血幹細胞的卡通短視頻。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+為什麼您應該儲存寶寶的臍帶血？
+*/}),
+				subtitle: hereDoc(function() {/*!
+請觀賞一段有關臍帶血幹細胞的卡通短視頻。
+*/}),
 			},
 			page2: {
-				title: "臍帶血如何能挽救生命？",
-				subtitle: "請觀賞一段3分鐘的視頻：一個家庭的故事。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+臍帶血如何能挽救生命？
+*/}),
+				subtitle: hereDoc(function() {/*!
+請觀賞一段3分鐘的視頻：一個家庭的故事。
+*/}),
 			},
 			page3: { 
-				title: "為何選擇Cryo-Cell？",
-				subtitle: "請觀賞一段短視頻，為您介紹領先世界的臍帶血公司"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+為何選擇Cryo-Cell？
+*/}),
+				subtitle: hereDoc(function() {/*!
+請觀賞一段短視頻，為您介紹領先世界的臍帶血公司
+*/}),
 			},
 			page4: { 
-				title: "謝謝",
-				subtitle: "希望這些短視頻對您有所助益。<br />若想更加了解我們的服務，請填寫下列聯繫表格。"
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+謝謝
+*/}),
+				subtitle: hereDoc(function() {/*!
+希望這些短視頻對您有所助益。<br />若想更加了解我們的服務，請填寫下列聯繫表格。
+*/}),
 			},
 			page5: { 
-				title: "謝謝",
-				subtitle: "您的要求已送出<br />我們的客戶服務代表將很快地與您聯繫."
+				preamble: hereDoc(function() {/*!
+*/}),
+				title: hereDoc(function() {/*!
+謝謝
+*/}),
+				subtitle: hereDoc(function() {/*!
+您的要求已送出<br />我們的客戶服務代表將很快地與您聯繫.
+*/}),
 			}
 		}
 	};
@@ -777,7 +1094,9 @@ var onPlayerStateChange;
 			phone_number: "Phone Number",
 			email: "Email",
 			doctor: "Doctor",
-			sweepstakes: "Enter to win FREE cord blood banking!"
+			sweepstakes: hereDoc(function() {/*!
+Enter to win FREE cord blood banking!
+*/}),
 		},
 		es: {
 			first_name: "Nombre",
@@ -786,7 +1105,9 @@ var onPlayerStateChange;
 			phone_number: "Teléfono",
 			email: "Correo electrónico",
 			doctor: "Médico",
-			sweepstakes: "!Participe para ganar el almacenamiento de la sangre del cordón umbilical GRATIS!"
+			sweepstakes: hereDoc(function() {/*!
+!Participe para ganar el almacenamiento de la sangre del cordón umbilical GRATIS!
+*/}),
 		},
 		ru: {
 			first_name: "Имя",
@@ -795,7 +1116,9 @@ var onPlayerStateChange;
 			phone_number: "Номер телефона",
 			email: "Email",
 			doctor: "Доктор",
-			sweepstakes: "Зарегистрироваться, чтобы выиграть БЕСПЛАТНОЕ хранение пуповинной крови!"
+			sweepstakes: hereDoc(function() {/*!
+Зарегистрироваться, чтобы выиграть БЕСПЛАТНОЕ хранение пуповинной крови!
+*/}),
 		},
 		it: {
 			first_name: "Nome",
@@ -804,7 +1127,9 @@ var onPlayerStateChange;
 			phone_number: "Numero di telefono",
 			email: "Email",
 			doctor: "Doctor",
-			sweepstakes: "Enter to win FREE cord blood banking!"
+			sweepstakes: hereDoc(function() {/*!
+Enter to win FREE cord blood banking!
+*/}),
 		},
 		cn: {
 			first_name: "名",
@@ -813,7 +1138,9 @@ var onPlayerStateChange;
 			phone_number: "电话号码",
 			email: "电子邮件",
 			doctor: "醫生",
-			sweepstakes: "参加抽奖，赢取免费的脐血储存！"
+			sweepstakes: hereDoc(function() {/*!
+参加抽奖，赢取免费的脐血储存！
+*/}),
 		},
 		tw: {
 			first_name: "名",
@@ -822,7 +1149,9 @@ var onPlayerStateChange;
 			phone_number: "電話號碼",
 			email: "電子郵件",
 			doctor: "醫生",
-			sweepstakes: "參加抽獎，贏取免費的臍血儲存！"
+			sweepstakes: hereDoc(function() {/*!
+參加抽獎，贏取免費的臍血儲存！
+*/}),
 		}
 	};
 	
@@ -831,28 +1160,52 @@ var onPlayerStateChange;
 	// Вопрос задаётся в виде обычного теста
 	var surveys = {
 		en: {
-			title: "<strong>Welcome to the Cord Blood<br />Education Program</strong>",
-			label: "Please enter below the name of the Ob/Gyn practice or doctor where you heard about these videos:"
+			title: hereDoc(function() {/*!
+<strong>Welcome to the Cord Blood<br />Education Program</strong>
+*/}),
+			label: hereDoc(function() {/*!
+Please enter below the name of the Ob/Gyn practice or doctor where you heard about these videos:
+*/}),
 		},
 		es: {
-			title: "<strong>Bienvenido al programa de Educación de la Sangre del Cordón Umbilical</strong>",
-			label: "Por favor ingresar el nombre del consultorio o de su médico obstetra / ginecólogo:"
+			title: hereDoc(function() {/*!
+<strong>Bienvenido al programa de Educación de la Sangre del Cordón Umbilical</strong>
+*/}),
+			label: hereDoc(function() {/*!
+Por favor ingresar el nombre del consultorio o de su médico obstetra / ginecólogo:
+*/}),
 		},
 		ru: {
-			title: "<strong>Добро пожаловать в программу обучения<br />по сохранению пуповинной крови</strong>",
-			label: "Пожалуйста, укажите генекологическую практику или доктора, где или от которого Вы узнали об этом видео:"
+			title: hereDoc(function() {/*!
+<strong>Добро пожаловать в программу обучения<br />по сохранению пуповинной крови</strong>
+*/}),
+			label: hereDoc(function() {/*!
+Пожалуйста, укажите генекологическую практику или доктора, где или от которого Вы узнали об этом видео:
+*/}),
 		},
 		it: {
-			title: "<strong>Welcome to the Cord Blood<br />Education Program</strong>",
-			label: "Please enter below the name of the Ob/Gyn practice or doctor where you heard about these videos:"
+			title: hereDoc(function() {/*!
+<strong>Welcome to the Cord Blood<br />Education Program</strong>
+*/}),
+			label: hereDoc(function() {/*!
+Please enter below the name of the Ob/Gyn practice or doctor where you heard about these videos:
+*/}),
 		},
 		cn: {
-			title: "<strong>欢迎观赏这个脐带血教育节目</strong>",
-			label: "请在下面输入您的妇产科医生或诊所的名称:"
+			title: hereDoc(function() {/*!
+<strong>欢迎观赏这个脐带血教育节目</strong>
+*/}),
+			label: hereDoc(function() {/*!
+请在下面输入您的妇产科医生或诊所的名称:
+*/}),
 		},
 		tw: {
-			title: "<strong>歡迎觀賞這個臍帶血教育節目</strong>",
-			label: "請在下面輸入您的婦產科醫生或診所的名稱:"
+			title: hereDoc(function() {/*!
+<strong>歡迎觀賞這個臍帶血教育節目</strong>
+*/}),
+			label: hereDoc(function() {/*!
+請在下面輸入您的婦產科醫生或診所的名稱:
+*/}),
 		}
 	};
 	
@@ -1806,21 +2159,70 @@ var onPlayerStateChange;
 		debugWrite("createMenuPage","start");
 		debugWrite("pageId",pageId);
 		debugWrite("lang",lang);
-		var page = $(".menu-page-template#"+pageId).clone();
-		page.appendTo($("#center-vertical")).removeClass("menu-page-template").addClass("menu-page");
+		var page = $(".menu-page-template").clone();
+		page.appendTo($("#center-vertical")).removeClass("menu-page-template").addClass("menu-page").addClass(pageId);
 		page.attr("id",pageId+"-"+lang);
 		page.addClass(lang);
+		debugWrite("form",pageForms[pageId].form);
 		
-		// Производим замену в строках-шаблонах значениями аргументов и добавляем полученные строуи на страницу
-		var title = pages[lang][pageId].title;
-		var subtitle = pages[lang][pageId].subtitle;
-		for(var arg in args) {
-			title = title.split("##"+arg+"##").join(args[arg]);
-			subtitle = subtitle.split("##"+arg+"##").join(args[arg]);
+
+			var inputs = document.getElementsByTagName("input"), span = Array(), textnode, option, active;
+			for(a = 0; a < inputs.length; a++) {
+				if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && inputs[a].className.indexOf("styled") > -1) {
+					if(!inputs[a].getAttribute("disabled") && !inputs[a].checked) {
+							$(inputs[a].previousSibling).mousedown();
+							$(inputs[a].previousSibling).mouseup();
+					}
+				}
+			}
+			
+		debugWrite("hideDoctor","start");
+		hideDoctor();
+		debugWrite("hideDoctor","end");
+		
+		page.append(pageForms[pageId].form);
+		debugWrite("Инициализация переменных","start");
+		try {
+			page.find("input[name*='ipad_id']").val(getID());
+			page.find("input[name*='url']").val(window.location.toString());
+		} catch(e) {
+			debugWrite("error",e);
 		}
-		page.find("#title").html(title);
-		page.find("#subtitle").html(subtitle);
+		debugWrite("Инициализация переменных","end");
+	
+		debugWrite("Заполняем поля формы значениями указанными в аргументах","start");
+		for(var arg in args) {
+			page.find("input[name*='"+arg+"']").val(args[arg]);
+		}
+		debugWrite("Заполняем поля формы значениями указанными в аргументах","end");
 		
+		// Производим замену в строках-шаблонах значениями аргументов и добавляем полученные строки на страницу
+		var titles = {};
+		for(var prop in pages[lang][pageId]) titles[prop]=pages[lang][pageId][prop];
+		for(var prop in titles) for(var arg in args) titles[prop] = titles[prop].split("##"+arg+"##").join(args[arg]);
+		for(var prop in titles) page.find("#"+prop+"").html(titles[prop]);
+		
+			// Устанавливаем все элементы checkbox в состояние checked
+			// Используем фрагмент из скрипта CUSTOM FORM ELEMENTS
+			var inputs = page.get(0).getElementsByTagName("input"), span = Array(), textnode, option, active;
+			for(a = 0; a < inputs.length; a++) {
+				if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && inputs[a].className.indexOf("styled") > -1) {
+					span[a] = document.createElement("span");
+					span[a].className = inputs[a].type;
+	
+					if(inputs[a].checked == true) {
+						if(inputs[a].type == "checkbox") {
+							position = "0 -" + (checkboxHeight*2) + "px";
+							span[a].style.backgroundPosition = position;
+						} else {
+							position = "0 -" + (radioHeight*2) + "px";
+							span[a].style.backgroundPosition = position;
+						}
+					}
+					inputs[a].parentNode.insertBefore(span[a], inputs[a]);
+				}
+			}
+	
 			// Используем фрагмент из скрипта CUSTOM FORM ELEMENTS
 			var inputs = page.get(0).getElementsByTagName("input");
 			for(a = 0; a < inputs.length; a++) {
@@ -2256,26 +2658,6 @@ var onPlayerStateChange;
 //		}
 		
 	
-			// Используем фрагмент из скрипта CUSTOM FORM ELEMENTS
-			var inputs = document.getElementsByTagName("input"), span = Array(), textnode, option, active;
-			for(a = 0; a < inputs.length; a++) {
-				if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && inputs[a].className.indexOf("styled") > -1) {
-					span[a] = document.createElement("span");
-					span[a].className = inputs[a].type;
-	
-					if(inputs[a].checked == true) {
-						if(inputs[a].type == "checkbox") {
-							position = "0 -" + (checkboxHeight*2) + "px";
-							span[a].style.backgroundPosition = position;
-						} else {
-							position = "0 -" + (radioHeight*2) + "px";
-							span[a].style.backgroundPosition = position;
-						}
-					}
-					inputs[a].parentNode.insertBefore(span[a], inputs[a]);
-				}
-			}
-	
 		// Использование языка браузера в качестве начального языка страниц
 		debugWrite("Использование языка браузера в качестве начального языка страниц","start");
 		var userLang = navigator.language || navigator.userLanguage; 
@@ -2397,18 +2779,6 @@ var onPlayerStateChange;
 		createPagesIfNotExists(currentLanguage);
 		debugWrite("Создание страниц для текущего языка","end");
 			
-	/*
-		$("input[name*='expected_delivery_date']").attr("type","date");
-		$("input[name*='due_date']").attr("type","date");
-		$("input[name*='phone']").attr("type","tel");
-		$("input[name*='e_mail']").attr("type","email");
-	
-		$("label[id*='url']").parent().hide();
-		$("label[id*='ipad_id']").parent().hide();
-		$("input[id*='url']").parent().hide();
-		$("input[id*='ipad_id']").parent().hide();
-	*/
-	
 		debugWrite("Инициализация переменных","start");
 		try {
 			$("input[name*='ipad_id']").val(getID());
@@ -2423,7 +2793,7 @@ var onPlayerStateChange;
 			$("input[name*='"+arg+"']").val(args[arg]);
 		}
 		debugWrite("Заполняем поля формы значениями указанными в аргументах","end");
-		
+	
 		debugWrite("Изменение размера элементов под размер экрана","start");
 		try {
 			updateHeight();
