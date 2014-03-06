@@ -708,13 +708,12 @@ var onPlayerStateChange;
 		en: {
 			page0: { 
 				preamble: hereDoc(function() {/*!
-Many states mandate that expectant parents are educated on the benefits of cord blood banking.
 */}),
 				title: hereDoc(function() {/*!
-Cryo-Cell invites you learn more about cord blood banking
+Cryo-Cell invites you to learn more about cord blood banking
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> invites you to watch a brief video on the importance of preserving your baby's cord blood and tissue at birth. This video was developed in collaboration with Parent's Guide to Cord Blood Foundation to educate future parents about life saving options.<br />Please fill in the form below to proceed :
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> would like you to watch a brief video on the importance of preserving your baby's cord blood and tissue. This video was developed in collaboration with Parent's Guide to Cord Blood Foundation to educate future parents about life saving options. Many states mandate that expectant parents are provided with this educational material.<br />Please fill in the form below to proceed :
 */}), 
 			},
 			page1: { 

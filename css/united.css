@@ -426,6 +426,11 @@ div.subtitle h2#subtitle {
 	font-size: 28px;
 	line-height:32px;
 }
+.page0.en div.title h1#title {
+	margin-top: 0px;
+	font-size: 28px;
+	line-height:32px;
+}
 .page0.es div.subtitle h2#subtitle {
 	font-size: 18px;
 	line-height:22px;
