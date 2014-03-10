@@ -422,7 +422,7 @@ div.subtitle h2#subtitle {
 }
 
 .page0 div.title h1#title {
-	margin-top: 40px;
+	margin-top: 24px;
 	font-size: 28px;
 	line-height:32px;
 }
@@ -431,12 +431,24 @@ div.subtitle h2#subtitle {
 	font-size: 28px;
 	line-height:32px;
 }
+
+.page0.ru div.title h1#title {
+	margin-top: 0px;
+	font-size: 28px;
+	line-height:32px;
+}
+
 .page0.es div.subtitle h2#subtitle {
 	font-size: 18px;
 	line-height:22px;
 }
 
 .page0.ru div.subtitle h2#subtitle {
+	font-size: 16px;
+	line-height:18px;
+}
+
+.page0.es div.subtitle h2#subtitle {
 	font-size: 14px;
 	line-height:16px;
 }

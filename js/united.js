@@ -770,13 +770,12 @@ Your request has been sent.<br />One of our client services advisors will contac
 		es: {
 			page0: { 
 				preamble: hereDoc(function() {/*!
-Muchos estados exigen que los futuros padres sean educados sobre los beneficios de almacenar la sangre del cordón umbilical. 
 */}),
 				title: hereDoc(function() {/*!
 Cryo-Cell le invita a aprender más sobre la sangre del cordón umbilical
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> lo invita a ver un breve video acerca de la importancia de preservar la sangre y el tejido del cordón umbilical de su bebé en el momento del nacimiento. Este video fue desarrollado en colaboración con Parent's Guide to Cord Blood Foundation para instruir a futuros padres sobre las opciones que potencialmente salvan vidas.<br />Por favor complete el siguiente formulario para continuar:
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> lo invita a ver un breve video acerca de la importancia de preservar la sangre y el tejido del cordón umbilical de su bebé en el momento del nacimiento. Este video fue desarrollado en colaboración con Parent's Guide to Cord Blood Foundation para instruir a futuros padres sobre las opciones que potencialmente salvan vidas. Muchos estados exigen que los futuros padres sean educados sobre los beneficios de almacenar la sangre del cordón umbilical y que se les sea proporcionado con este tipo de material educativo.<br />Por favor complete el siguiente formulario para continuar:
 */}),
 			},
 			page1: { 
@@ -833,13 +832,12 @@ Su solicitud ha sido enviada.<br />Muy pronto uno de nuestros asesores de servic
 		ru: {
 			page0: { 
 				preamble: hereDoc(function() {/*!
-Правительства большинства Штатов предписывают, что будущие родители должны быть осведомлены о преимуществах сохранения пуповинной крови.
 */}),
 				title: hereDoc(function() {/*!
 Cryo-Cell предлагает Вам узнать больше о сохранении стволовых клеток из пуповинной крови
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> приглашает Вас посмотреть видео о сохранении пуповинной крови Вашего ребёнка. Это видео создано совместно с Parent's Guide to Cord Blood Foundation с целью информирования будущих родителей о возможностях по сохранению здоровья.<br />Пожалуйста, заполните форму ниже, чтобы продолжить :
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span> приглашает Вас посмотреть видео о сохранении пуповинной крови Вашего ребёнка. Это видео создано совместно с Parent's Guide to Cord Blood Foundation с целью информирования будущих родителей о возможностях по сохранению здоровья. Правительства большинства Штатов считает, что будущие родители должны быть осведомлены о преимуществах сбора пуповииной крови и рекомендует такой вид предоставления учебного материала. Пожалуйста, заполните форму ниже, чтобы продолжить :
 */}),
 			},
 			page1: { 
@@ -958,13 +956,12 @@ Your request has been sent.<br />One of our client services representatives will
 		cn: {
 			page0: { 
 				preamble: hereDoc(function() {/*!
-许多州政府强制要求准父母必须接受有关储存脐带血的教育，以了解其诸多裨益。
 */}),
 				title: hereDoc(function() {/*!
 Cryo-Cell在此诚邀您增进对脐带血储存的认识。
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性。<br />该视频为我们會同Parent's Guide to Cord Blood基金会，为教育准父母有关救生选项所制作的。<br />请继续填写下表：
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性。<br />许多州强制要求准父母必须获得有关储存脐带血的教育及教材，从而了解其诸多裨益。<br />该视频为我们會同Parent's Guide to Cord Blood基金会，为教育准父母有关救生选项所制作的。<br />请继续填写下表：
 */}),
 			},
 			page1: { 
@@ -1021,13 +1018,12 @@ Cryo-Cell在此诚邀您增进对脐带血储存的认识。
 		tw: {
 			page0: { 
 				preamble: hereDoc(function() {/*!
-許多州政府強制要求準父母必須接受有關儲存臍帶血的教育，以了解其諸多裨益。
 */}),
 				title: hereDoc(function() {/*!
 Cryo-Cell在此誠邀您增進對臍帶血儲存的認識。
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性。<br />該視頻為我們会同Parent's Guide to Cord Blood基金會，為教育準父母有關救生選項所製作的。<br />請繼續填寫下表：
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性。<br />許多州強制要求準父母必須獲得有關儲存臍帶血的教育及教材，從而了解其諸多裨益。<br />該視頻為我們会同Parent's Guide to Cord Blood基金會，為教育準父母有關救生選項所製作的。<br />請繼續填寫下表：
 */}),
 			},
 			page1: { 
