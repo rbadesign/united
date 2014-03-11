@@ -961,7 +961,9 @@ Your request has been sent.<br />One of our client services representatives will
 Cryo-Cell在此诚邀您增进对脐带血储存的认识。
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性。<br />许多州强制要求准父母必须获得有关储存脐带血的教育及教材，从而了解其诸多裨益。<br />该视频为我们會同Parent's Guide to Cord Blood基金会，为教育准父母有关救生选项所制作的。<br />请继续填写下表：
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀请您观看一段简短的视频， 有关保存出生婴儿脐带血液和组织的重要性。<br />
+该视频为我们會同Parent's Guide to Cord Blood基金会共同制作的。<br />许多州强制要求准父母必须接受有关储存脐带血的教育及获得相关教材，从而了解其诸多裨益。<br />
+请您先填写下表：
 */}),
 			},
 			page1: { 
@@ -1023,7 +1025,9 @@ Cryo-Cell在此诚邀您增进对脐带血储存的认识。
 Cryo-Cell在此誠邀您增進對臍帶血儲存的認識。
 */}),
 				subtitle: hereDoc(function() {/*!
-<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性。<br />許多州強制要求準父母必須獲得有關儲存臍帶血的教育及教材，從而了解其諸多裨益。<br />該視頻為我們会同Parent's Guide to Cord Blood基金會，為教育準父母有關救生選項所製作的。<br />請繼續填寫下表：
+<span style='font-weight: bolder; font-size: larger;'>##doctor##</span>邀請您觀看一段簡短的視頻， 有關保存出生嬰兒臍帶血液和組織的重要性。<br />
+該視頻為我們會同Parent's Guide to Cord Blood基金會共同製作的。<br />許多州強制要求準父母必須接受有關儲存臍帶血的教育及獲得相關教材，從而了解其諸多裨益。<br />
+請您先填寫下表：
 */}),
 			},
 			page1: { 
